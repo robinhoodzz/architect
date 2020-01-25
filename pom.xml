@@ -11,6 +11,7 @@
 
     <modules>
         <module>juc</module>
+        <module>SpringHelloWorld</module>
     </modules>
 
     <dependencies>

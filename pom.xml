@@ -12,6 +12,8 @@
     <modules>
         <module>juc</module>
         <module>SpringHelloWorld</module>
+        <module>tplfile01</module>
+        <module>tplfile02</module>
     </modules>
 
     <dependencies>

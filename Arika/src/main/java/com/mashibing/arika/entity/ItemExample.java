@@ -1,4 +1,4 @@
-package com.mashibing.arica.entity;
+package com.mashibing.arika.entity;
 
 import java.util.ArrayList;
 import java.util.Date;

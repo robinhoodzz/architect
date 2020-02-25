@@ -1,4 +1,4 @@
-package com.mashibing.arica.mapper;
+package com.mashibing.arika.mapper;
 
 import java.io.Serializable;
 import java.util.List;

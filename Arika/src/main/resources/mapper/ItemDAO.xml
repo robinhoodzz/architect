@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.mashibing.arica.mapper.ItemDAO">
-  <resultMap id="BaseResultMap" type="com.mashibing.arica.entity.Item">
+<mapper namespace="com.mashibing.arika.mapper.ItemDAO">
+  <resultMap id="BaseResultMap" type="com.mashibing.arika.entity.Item">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="title" jdbcType="VARCHAR" property="title" />
     <result column="content" jdbcType="VARCHAR" property="content" />
@@ -68,7 +68,7 @@
   <sql id="Base_Column_List">
     id, title, content, last_generate
   </sql>
-  <select id="selectByExample" parameterType="com.mashibing.arica.entity.ItemExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.mashibing.arika.entity.ItemExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -100,19 +100,19 @@
     delete from item
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.mashibing.arica.entity.ItemExample">
+  <delete id="deleteByExample" parameterType="com.mashibing.arika.entity.ItemExample">
     delete from item
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert"  parameterType="com.mashibing.arica.entity.Item" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+  <insert id="insert"  parameterType="com.mashibing.arika.entity.Item" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
     insert into item (id, title, content, 
       last_generate)
     values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, 
       #{lastGenerate,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.mashibing.arica.entity.Item">
+  <insert id="insertSelective" parameterType="com.mashibing.arika.entity.Item">
     insert into item
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -143,7 +143,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.mashibing.arica.entity.ItemExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.mashibing.arika.entity.ItemExample" resultType="java.lang.Long">
     select count(*) from item
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -179,7 +179,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.mashibing.arica.entity.Item">
+  <update id="updateByPrimaryKeySelective" parameterType="com.mashibing.arika.entity.Item">
     update item
     <set>
       <if test="title != null">
@@ -194,7 +194,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.mashibing.arica.entity.Item">
+  <update id="updateByPrimaryKey" parameterType="com.mashibing.arika.entity.Item">
     update item
     set title = #{title,jdbcType=VARCHAR},
       content = #{content,jdbcType=VARCHAR},

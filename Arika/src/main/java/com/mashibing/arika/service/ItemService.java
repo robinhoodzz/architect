@@ -1,11 +1,11 @@
-package com.mashibing.arica.service;
+package com.mashibing.arika.service;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mashibing.arica.entity.Item;
-import com.mashibing.arica.mapper.ItemDAO;
+import com.mashibing.arika.entity.Item;
+import com.mashibing.arika.mapper.ItemDAO;
 
 @Service
 public class ItemService  {

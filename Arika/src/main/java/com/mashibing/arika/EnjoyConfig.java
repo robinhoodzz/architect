@@ -18,7 +18,7 @@ public class EnjoyConfig {
 
         // 对 spring boot 进行配置
         jfr.setSuffix(".html");
-        jfr.setContentType(".text/html;charset=UTF-8");
+        jfr.setContentType("text/html;charset=UTF-8");
         jfr.setOrder(0);
 
         // 获取 engine 对象, 对 enjoy 模板引擎进行配置, 配置方式与前面章节完全一样

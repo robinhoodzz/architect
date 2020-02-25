@@ -1,7 +1,7 @@
-package com.mashibing.arica.mapper;
+package com.mashibing.arika.mapper;
 
-import com.mashibing.arica.entity.Item;
-import com.mashibing.arica.entity.ItemExample;
+import com.mashibing.arika.entity.Item;
+import com.mashibing.arika.entity.ItemExample;
 import org.springframework.stereotype.Repository;
 
 /**

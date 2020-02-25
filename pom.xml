@@ -14,6 +14,8 @@
         <module>SpringHelloWorld</module>
         <module>tplfile01</module>
         <module>tplfile02</module>
+        <module>Arika</module>
+        <module>HelloZooKeeper</module>
     </modules>
 
     <dependencies>
